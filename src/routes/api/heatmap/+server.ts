@@ -18,6 +18,28 @@ export function GET({ url }) {
                 END
         `;
     }
+    const filter = url.searchParams.get("filter");
+    // This if-check is here for correct behaviour when we get an empty list as a
+    // filter param. This happens when we deselected all filter boxes in the frontend.
+    if (filter === "") {
+        return json({
+            data: [],
+            max: 0,
+            average: 0,
+            total: 0,
+        });
+    }
+    if (filter) {
+        const filterCondition = filter
+            .split(",")
+            .map(x => `ausf_typ_bezeichnung LIKE '${x}.%'`)
+            .join(" OR ");
+        if (queryCondition) {
+            queryCondition += ` AND ${filterCondition}`;
+        } else {
+            queryCondition = `WHERE ${filterCondition}`;
+        }
+    }
     /* TODO: At the moment the heatmap only displays the starting train stations of
         the cancelled trains, to have more accurate data I should use bhf_von_ausfall
         which would be the bhf from which the train can't continue or is officially 

@@ -45,12 +45,15 @@ with open('data/ausfall_ 2022-01-01_2023-03-11.csv','r', encoding="utf8") as f:
         parse_planzeit(i['planzeit_bis'])
     ) for i in dr]
     
+count = 0
 for entry in to_db_ausfall:
     try:
         cur.execute('INSERT INTO ausfall (betriebstag, ausf_typ_bezeichnung, bhf_von, planzeit_von, bhf_bis, planzeit_bis) VALUES (?, ?, ?, ?, ?, ?);', entry)
     except Exception:
+        count += 1
         if verbose:
             print('Couldn\'t add ausfall:', entry, 'Error during database insert')
+print('Couldn\' add', count, 'ausfall entries')
 con.commit()
 
 con.close()
