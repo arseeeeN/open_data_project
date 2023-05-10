@@ -5,7 +5,7 @@
     let theme: string;
 </script>
 
-<div class="flex items-center flex-col py-10 min-h-screen" data-theme={theme}>
+<div class="flex items-center flex-col min-h-screen" data-theme={theme}>
     <ThemeSwitcher bind:theme={theme} />
     <slot />
 </div>

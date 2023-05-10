@@ -2,6 +2,7 @@ import { json } from "@sveltejs/kit";
 import { db } from "$lib/server/database";
 
 export function GET() {
+    // TODO: Use date(... / 1000, 'unixepoch') here
     const result = db
         .prepare(`
             SELECT 

@@ -73,7 +73,7 @@
     });
 </script>
 
-<div class="card w-[85vw] h-[38rem] mt-10 card-side bg-base-100 drop-shadow-xl items-center">
+<div class="card w-[85vw] h-[38rem] my-10 card-side bg-base-100 drop-shadow-xl items-center">
     <div id="heatmap"></div>
     <div class="card-body h-full">
         <h2 class="card-title">Einstellungen</h2>

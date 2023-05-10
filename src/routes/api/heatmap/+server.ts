@@ -6,6 +6,7 @@ export function GET({ url }) {
     const to = url.searchParams.get("to");
     let queryCondition = "";
     if (from && to) {
+        // TODO: Use the BETWEEN operator here instead?
         queryCondition = `
             WHERE
                 CASE WHEN planzeit_von IS NOT NULL
