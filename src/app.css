@@ -7,3 +7,7 @@
 :root {
   font-family: "Roboto", sans-serif;
 }
+
+.text-body {
+  @apply w-[60vw] leading-8 text-xl
+}
