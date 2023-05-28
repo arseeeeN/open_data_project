@@ -25,12 +25,13 @@
         average = heatmapData.average;
         total = heatmapData.total;
         heatmapLayer.setData({
-            max: (heatmapData.average + heatmapData.max * 0.3) / 2,
+            // I don't know enough statistics to use a proper formula here, this is good enough for now
+            max: (heatmapData.average + heatmapData.max * 50 * (heatmapData.average / heatmapData.max)) / 2,
             data: heatmapData.data,
         });
     }
 
-    async function handleUpdatePress() {
+    async function handleUpdateEvent() {
         const fromTimestamp = Date.parse(from);
         const toTimestamp = Date.parse(to);
         const filterParam = Object.keys(filter)
@@ -88,6 +89,7 @@
                         <input type="datetime-local" id="from-time"
                             class="input input-bordered rounded-lg w-full max-w-xs"
                             name="from-time" bind:value={from}
+                            on:change={handleUpdateEvent}
                             min={timeSpan.from} max={timeSpan.to}>
                     </div>
                     <div class="form-control w-full max-w-xs mt-2">
@@ -95,6 +97,7 @@
                         <input type="datetime-local" id="to-time"
                             class="input input-bordered rounded-lg w-full max-w-xs"
                             name="to-time" bind:value={to}
+                            on:change={handleUpdateEvent}
                             min={timeSpan.from} max={timeSpan.to}>
                     </div>
                 {/await}
@@ -114,11 +117,8 @@
                 </div>
             </div>
             <div class="w-1/2">
-                <MapFilter bind:filter={filter} />
+                <MapFilter bind:filter={filter} onChange={handleUpdateEvent} />
             </div>
-        </div>
-        <div class="card-actions justify-end mt-auto">
-            <button on:click={handleUpdatePress} class="btn btn-primary">Update</button>
         </div>
     </div>
 </div>

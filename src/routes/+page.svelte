@@ -38,6 +38,16 @@
 <Map />
 <p class="text-body">
     Wie man auf den ersten Blick in der Heatmap sehen kann, sehen die Daten wahrscheinlich nicht so aus wie erwartet.
+    Was man erwarten könnte, wäre das die grössten Städte in der Schweiz die meisten Ausfälle haben, dies ist aber nur bedingt der Fall.
+    Lausanne hat zwar viele Einwohner aber über das ganze Jahr verteilt hat Lausanne in diesem Datenset 45958 Ausfälle 
+    (und Epalinges, Croisettes welches neben Lausanne liegt hat 45516 Ausfälle) was im Vergleich zu den anderen Standorten 
+    um einiges mehr ist. Dies lässt sich aber erklären, wenn man sich das Datenset genauer anschaut.
+    <br>
+    Im Datenset sind hauptsächlich Ausfälle des "Regionalen Personenverkehrs" (RPV), jedoch hat es in einigen Regionen auch Linien 
+    des Ortsverkehrt (OV). In Zürich jedoch z.B. hat es nur Linien des RPV und somit in der Stadt selbst kaum aufgezeichnete Ausfälle.
+    Ein anderer Grund für die Masse der Ausfälle in Lausanne ist die Tatsache das es in Lausanne sehr viele Ausfälle des Typ 2 gibt 
+    "Keine Echtzeitdaten für ganze Fahrt". Dies heisst, dass wir nicht wissen ob diese Fahrten wirklich ausgefallen sind oder sie einfach nicht richtig 
+    übertragen worden sind. Indem man Typ 2 bei dem Filter ausschaltet erhält man ein etwas "korrekteres" Bild der ganzen Situation.
 </p>
 <h2 class="text-4xl font-black my-8">Tägliche Ausfälle</h2>
 <p class="text-body">
