@@ -9,5 +9,5 @@
 }
 
 .text-body {
-  @apply w-[60vw] leading-8 text-xl
+  @apply w-[60vw] leading-[34px] text-xl
 }

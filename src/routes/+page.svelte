@@ -11,28 +11,23 @@
 <p class="text-body">
     Die meisten kennen diese Situation, man ist an der Bushaltestelle und wartet 
     auf seinen Bus damit man zum Bahnhof kommt und dort auf den Zug kann. In der App steht
-    das der Bus um <b>08:19</b> ankommt jedoch ist es bereits <b>09:21</b> und es ist kein Bus in Sicht.
-    <br>
+    das der Bus um 08:19 ankommt jedoch ist es bereits 09:21 und es ist kein Bus in Sicht.
     Langsam wird man nervös, ist der Bus vielleicht früher gekommen und man hat ihn verpasst? Nicht möglich,
     er muss also einfach verspätet sein... kommt man noch rechtzeitig am Bahnhof an?
-    <br>
     Fünf Minuten später, insgesamt mit Sieben Minuten Verspätung, kommt der Bus dannn doch an.
     Während der Fahrt wird einem dann langsam klar das der anschliessende Zug bereits abgefahren ist.
+    Vielleicht ist der allgegewärtige "Zugausfall wegen Baustelle" einigen doch bekannter.
     <br>
-    Vielleicht ist der allgegewärtige "Zugausfall wegen Baustelle" einigen doch bekannter. Im allgemeinen ist 
-    die Häufigkeit dieser Situationen relativ hoch und ich habe mich immer gefragt was die Ursachen für 
+    Im Allgemeinen ist die Häufigkeit dieser Situationen relativ hoch und ich habe mich immer gefragt was die Ursachen für 
     die Verspätungen und Ausfälle sind und wie viele davon denn eigentlich vorkommen und ob dies von der Jahreszeit abhängt.
-    <br>
     Ich werde probieren einige meiner Fragen mit dem Datenset welches ich habe zu beantworten und meine Erkenntnisse zu visualisieren.
 </p>
 <h2 class="text-4xl font-black my-8">Heatmap</h2>
 <p class="text-body">
     Die erste Idee war, die Hotspots für Ausfälle in der Schweiz zu finden.
     Dafür ist eine Heatmap natürlich ideal also sass ich mich an die Arbeit.
-    <br>
     Beim Verarbeiten der Daten sind mir einige Anomalien aufgefallen, auf welche ich später noch genauer eingehen werde.
     Diese Merkwürdigkeiten sind ebenfalls in der Heatmap zu sehen.
-    <br>
     Man kann in der Heatmap die Zeitspanne wählen und nach den Ausfallgründen filtern. Ausserdem hat man noch einige kleine Statistiken.
 </p>
 <Map />
@@ -51,20 +46,8 @@
 </p>
 <h2 class="text-4xl font-black my-8">Tägliche Ausfälle</h2>
 <p class="text-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel enim elit. 
-    Nullam sed lorem fringilla, eleifend ante dictum, molestie velit. 
-    Quisque porta magna tempor tellus laoreet, a elementum ex auctor. 
-    Donec eget odio quis tortor cursus elementum. 
-    Fusce ullamcorper nisi eu tortor placerat, nec molestie elit iaculis. 
-    Nulla facilisi. Phasellus dignissim est sit amet dapibus fringilla. 
-    Proin a leo molestie, feugiat nisi vitae, porta nisl. 
-    Proin sit amet nunc in dolor rutrum consectetur. 
-    Morbi faucibus orci est, at porttitor justo placerat et. 
-    Aenean efficitur metus nec sodales consequat. 
-    Quisque efficitur, erat sit amet lacinia condimentum, ipsum quam placerat dolor, eget tincidunt sapien lectus at velit. 
-    Sed mattis hendrerit urna, vel rutrum tortor mattis nec.
-    Aliquam sed tempor justo, et ornare neque. 
-    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Eine simple Statistik die viel aussagen kann in diesem Falle sind natürlich die täglichen Ausfälle.
+    Das Ziel hierbei ist es potenzielle Ereignisse zu erkennen, welche sich in den Daten wiederspiegeln.
 </p>
 <DailyAreaChart />
 <p class="text-body">
