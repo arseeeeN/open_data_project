@@ -54,8 +54,10 @@
 <p class="text-body">
     Man sieht im Graphen einige interessante Dinge. Das erste was auffällt ist, dass die Daten generell ziemlich gleichmässig sind
     und nur an einzelnen Orten "Spikes" haben. Der grösste dieser Spikes passiert am 7. und 8. November und es gibt einige kleinere
-    um den 10. Dezember und 17. Mai rum. Ich habe zu keinem dieser Daten eine klare Ursache gefunden und man kann lediglich nur spekulieren
-    warum es zu so vielen Ausfällen an diesen Tagen kam.
+    um den 10. Dezember und 17. Mai rum. Der grosse Spike im November hat mich am meisten interessiert und scheinbar war die Ursache dafür
+    eine Panne bei der IT von SBB was darin resultierte, dass keine Pünktlichkeitsdaten gespeichert werden konnten. Daher werden die Daten
+    als ein Typ 2 Ausfall klassifiziert, die dazugehörigen Fahrten haben zum grössten Teil jedoch wahrscheinlich stattgefunden.
+    Wie auch bei der Heatmap kann man hier den Typ 2 bei den Filtern ausschalten um ein korrekteres Bild zu bekommen.
 </p>
 <h2 class="text-4xl font-black my-8">Seasonale Ausfälle</h2>
 <p class="text-body">
@@ -68,7 +70,7 @@
     Ich lag scheinbar komplett daneben? Das es im Herbst die meisten Ausfälle hat, hat wahrscheinlich mit dem Spike vom 7. und 8. November zu tun
     jedoch erklärt das nicht warum der Winter so wenige Ausfälle hat? Könnte es sein das ich die Robustheit unseres Öffentliche Verkehrs unterschätzt habe?
     Die plausiblere Erklärung meinerseits wäre jedoch, dass der Hauptgrund für Ausfälle Baustellen sein könnten und es im Winter einfach weniger Baustellen hat.
-    Dies ist hierbei nachwievor reine Spekulation meinserseits.
+    Dies ist hierbei nach wie vor reine Spekulation meinserseits.
 </p>
 <h2 class="text-4xl font-black my-8">Fazit</h2>
 <p class="text-body">
