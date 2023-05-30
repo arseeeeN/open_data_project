@@ -3,7 +3,7 @@
     import L from "leaflet";
     import "leaflet-tilelayer-swiss";
     import HeatmapOverlay from "leaflet-heatmap";
-    import MapFilter from "./MapFilter.svelte";
+    import AusfallTypeFilter from "../AusfallTypeFilter.svelte";
     import MapStatistic from "./MapStatistic.svelte";
     import { onMount } from "svelte";
     
@@ -17,7 +17,7 @@
         "4": true,
         "5": true,
         "6": true,
-    }
+    };
     let average;
     let total;
 
@@ -116,8 +116,8 @@
                     />
                 </div>
             </div>
-            <div class="w-1/2">
-                <MapFilter bind:filter={filter} onChange={handleUpdateEvent} />
+            <div class="w-2/5">
+                <AusfallTypeFilter bind:filter={filter} onChange={handleUpdateEvent} />
             </div>
         </div>
     </div>

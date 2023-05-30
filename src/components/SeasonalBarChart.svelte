@@ -1,6 +1,7 @@
 <script lang="ts">
     import { BarChart } from "$lib/client/graphs";
     import { onMount } from "svelte";
+    import AusfallTypeFilter from "./AusfallTypeFilter.svelte";
 
     type Season = "Spring" | "Summer" | "Autumn" | "Winter";
     interface SeasonalData {
@@ -15,6 +16,14 @@
     let winterStart = 1671663600000;
 
     let element: HTMLElement;
+    let filter: { [key: string]: boolean } = {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+    };
     
     function aggregateToSeasons(data: any[]): any[] {
         const seasonalData: SeasonalData[] = [
@@ -40,6 +49,26 @@
         return seasonalData;
     }
 
+    async function handleUpdateEvent() {
+        element.removeChild(element.children[0]);
+        const filterParam = Object.keys(filter)
+            .filter(key => !!filter[key]);
+        const url = `/api/daily?filter=${filterParam}`;
+        const data = await fetch(url)
+            .then(x => x.json());
+        element.appendChild(
+            BarChart(aggregateToSeasons(data), {
+                x: (d: any) => d.season,
+                y: (d: any) => d.amount,
+                yLabel: "Anzahl Ausfälle",
+                yFormat: "s",
+                width: 1200,
+                height: 500,
+                color: "teal"
+            } as any)!
+        );
+    }
+
     onMount(async () => {
         const data = await fetch("/api/daily")
             .then(x => x.json());
@@ -57,4 +86,12 @@
     });
 </script>
 
-<div class="w-[1200px] h-[500px] my-16" bind:this={element}></div>
+<div class="card w-[85vw] h-[38rem] my-10 card-side bg-base-100 drop-shadow-xl items-center">
+    <div class="w-[1200px] h-[500px] my-16 ml-16" bind:this={element}></div>
+    <div class="card-body h-full">
+        <h2 class="card-title">Einstellungen</h2>
+        <AusfallTypeFilter bind:filter={filter} onChange={handleUpdateEvent} />
+        <div class="flex gap-10">
+        </div>
+    </div>
+</div>

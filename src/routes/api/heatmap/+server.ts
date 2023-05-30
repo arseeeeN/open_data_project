@@ -6,16 +6,13 @@ export function GET({ url }) {
     const to = url.searchParams.get("to");
     let queryCondition = "";
     if (from && to) {
-        // TODO: Use the BETWEEN operator here instead?
         queryCondition = `
             WHERE
                 CASE WHEN planzeit_von IS NOT NULL
                 THEN
-                    planzeit_von > ${from} AND
-                    planzeit_von < ${to}
+                    planzeit_von BETWEEN ${from} AND ${to}
                 ELSE
-                    betriebstag > ${from} AND
-                    betriebstag < ${to}
+                    betriebstag BETWEEN ${from} AND ${to}
                 END
         `;
     }
@@ -36,7 +33,7 @@ export function GET({ url }) {
             .map(x => `ausf_typ_bezeichnung LIKE '${x}.%'`)
             .join(" OR ");
         if (queryCondition) {
-            queryCondition += ` AND ${filterCondition}`;
+            queryCondition += ` AND (${filterCondition})`;
         } else {
             queryCondition = `WHERE ${filterCondition}`;
         }
