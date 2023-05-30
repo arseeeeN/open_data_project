@@ -9,18 +9,14 @@
     <h1 class="mt-6 mb-12 text-4xl font-bold">Ausfälle im Öffentlichen Verkehr</h1>
 </nav>
 <p class="text-body">
-    <!-- TODO: Rewrite this -->
-    Die meisten kennen diese Situation, man ist an der Bushaltestelle und wartet
-    auf seinen Bus damit man zum Bahnhof kommt und dort auf den Zug kann. In der App steht
-    das der Bus um 08:19 ankommt jedoch ist es bereits 09:21 und es ist kein Bus in Sicht.
-    Langsam wird man nervös, ist der Bus vielleicht früher gekommen und man hat ihn verpasst? Nicht möglich,
-    er muss also einfach verspätet sein... kommt man noch rechtzeitig am Bahnhof an?
-    Fünf Minuten später, insgesamt mit Sieben Minuten Verspätung, kommt der Bus dannn doch an.
-    Während der Fahrt wird einem dann langsam klar das der anschliessende Zug bereits abgefahren ist.
-    Vielleicht ist der allgegewärtige "Zugausfall wegen Baustelle" einigen doch bekannter.
+    Die meisten kennen diese Situation, man ist im Zug und muss bald umsteigen jedoch fällt einem beim Blick
+    auf die App auf das der Anschluss ausgefallen ist. Verzweifelt sucht man nach einem Ersatz, jedoch ohne Glück.
+    Bitter akzeptiert man seine Niederlage und wartet auf den nächsten Zug.
+    Manchmal wird die Situation jedoch nur absurder und der ausgefallene Zug taucht plötzlich doch auf... lediglich mit däftiger Verspätung.
     <br>
-    Im Allgemeinen ist die Häufigkeit dieser Situationen relativ hoch und ich habe mich immer gefragt was die Ursachen für 
-    die Verspätungen und Ausfälle sind und wie viele davon denn eigentlich vorkommen und ob dies von der Jahreszeit abhängt.
+    Ich habe mich immer gefragt was die Ursachen für diese Verspätungen und Ausfälle sind und wie oft diese
+    denn eigentlich vorkommen. Hängen sie mit dem Wetter oder der Jahreszeit zusammen? Ausserdem ist die Frage wie viele der
+    offziellen "Ausfälle" denn wirklich Ausfälle sind und nicht nur grosse Verspätungen oder Misskommunikation.
     Ich werde probieren einige meiner Fragen mit dem Datenset welches ich habe zu beantworten und meine Erkenntnisse zu visualisieren.
 </p>
 <h2 class="text-4xl font-black my-8">Heatmap</h2>
