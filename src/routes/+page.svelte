@@ -70,20 +70,12 @@
 </p>
 <h2 class="text-4xl font-black my-8">Fazit</h2>
 <p class="text-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel enim elit. 
-    Nullam sed lorem fringilla, eleifend ante dictum, molestie velit. 
-    Quisque porta magna tempor tellus laoreet, a elementum ex auctor. 
-    Donec eget odio quis tortor cursus elementum. 
-    Fusce ullamcorper nisi eu tortor placerat, nec molestie elit iaculis. 
-    Nulla facilisi. Phasellus dignissim est sit amet dapibus fringilla. 
-    Proin a leo molestie, feugiat nisi vitae, porta nisl. 
-    Proin sit amet nunc in dolor rutrum consectetur. 
-    Morbi faucibus orci est, at porttitor justo placerat et. 
-    Aenean efficitur metus nec sodales consequat. 
-    Quisque efficitur, erat sit amet lacinia condimentum, ipsum quam placerat dolor, eget tincidunt sapien lectus at velit. 
-    Sed mattis hendrerit urna, vel rutrum tortor mattis nec.
-    Aliquam sed tempor justo, et ornare neque. 
-    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Meine Fragen konnten nicht vollständig beantwortet werden, jedoch habe ich trotzdem einige interessante Dinge herausgefunden. Das analysieren der
+    Daten war eine interessante Angelegenheit und zu sehen wie viele der Ausfälle einfach nur fehlende Echtzeitdaten sind und welche tatsächlich
+    ausgefallen sind. Es ist plötzlich nicht mehr so fragwürdig, das ausgefallene Züge doch noch mit Verspätung auftauchen können.
+    <br>
+    In der Zukunft würde ich diese Daten gerne noch auf andere Arten visualisieren und sie noch mit Verspätungsdaten verbinden um zu sehen wie diese
+    Statistiken zusammenhängen.
 </p>
 <footer class="h-44 w-full mt-20 bg-base-200 tracking-wide flex justify-between pt-8 px-40">
     <div>
