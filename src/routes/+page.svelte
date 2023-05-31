@@ -64,7 +64,7 @@
 <SeasonalBarChart />
 <p class="text-body">
     Ich lag scheinbar komplett daneben? Das es im Herbst die meisten Ausfälle hat, hat wahrscheinlich mit dem Spike vom 7. und 8. November zu tun
-    jedoch erklärt das nicht warum der Winter so wenige Ausfälle hat? Könnte es sein das ich die Robustheit unseres Öffentliche Verkehrs unterschätzt habe?
+    jedoch erklärt das nicht warum der Winter so wenige Ausfälle hat? Könnte es sein das ich die Robustheit unseres Öffentlichen Verkehrs unterschätzt habe?
     Die plausiblere Erklärung meinerseits wäre jedoch, dass der Hauptgrund für Ausfälle Baustellen sein könnten und es im Winter einfach weniger Baustellen hat.
     Dies ist hierbei nach wie vor reine Spekulation meinserseits.
 </p>
