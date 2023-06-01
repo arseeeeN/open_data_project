@@ -13,3 +13,5 @@ In order for the app to correctly work you have to have the data and build the d
 There is a python script (`setup_db.py`) to help you with that. The database schema is also given
 in `setup_db.sql`.
 Once you have the database file (called `open_data.db` and placed in the `./data` directory) everything in the app should correctly display.
+
+Alternatively there is already a database in the repository which can be downloaded via git LFS.
