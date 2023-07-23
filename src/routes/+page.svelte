@@ -9,15 +9,17 @@
     <h1 class="mt-6 mb-12 text-4xl font-bold">Ausfälle im Öffentlichen Verkehr</h1>
 </nav>
 <p class="text-body">
-    Die meisten kennen diese Situation, man ist im Zug und muss bald umsteigen jedoch fällt einem beim Blick
-    auf die App auf das der Anschluss ausgefallen ist. Verzweifelt sucht man nach einem Ersatz, jedoch ohne Glück.
-    Bitter akzeptiert man seine Niederlage und wartet auf den nächsten Zug.
-    Manchmal wird die Situation jedoch nur absurder und der ausgefallene Zug taucht plötzlich doch auf... lediglich mit deftiger Verspätung.
+    Die meisten von uns kennen diese Situation: Man sitzt im Zug und muss bald umsteigen,
+    aber beim Blick auf die App stellt man fest, dass der Anschlusszug ausgefallen ist.
+    Verzweifelt sucht man nach Alternativen, doch leider ohne Erfolg. Frustriert akzeptiert
+    man schliesslich die Niederlage und wartet auf den nächsten Zug
     <br>
-    Ich habe mich immer gefragt was die Ursachen für diese Verspätungen und Ausfälle sind und wie oft diese
-    denn eigentlich vorkommen. Hängen sie mit dem Wetter oder der Jahreszeit zusammen? Ausserdem ist die Frage wie viele der
-    offiziellen "Ausfälle" denn wirklich Ausfälle sind und nicht nur grosse Verspätungen oder Misskommunikation.
-    Ich werde probieren einige meiner Fragen mit dem Datenset welches ich habe zu beantworten und meine Erkenntnisse zu visualisieren.
+    Manchmal wird diese Situation noch absurder, wenn der ausgefallene Zug plötzlich mit erheblicher Verspätung auftaucht.
+    Man fragt sich dann, was wohl die Ursachen für diese Verspätungen und Ausfälle sind
+    und wie häufig sie tatsächlich vorkommen. Hängen sie mit dem Wetter oder der Jahreszeit zusammen?
+    Zudem stellt sich die Frage, wie viele der offiziell gemeldeten "Ausfälle" tatsächlich komplette Ausfälle
+    sind und nicht nur massive Verspätungen oder Kommunikationsprobleme.
+    Ich werde probieren diese Fragen mit Hilfe des erhaltenen Datensets zu beantworten und meine Erkenntnisse anschaulich zu visualisieren.
 </p>
 <h2 class="text-4xl font-black my-8">Heatmap</h2>
 <p class="text-body">
@@ -36,7 +38,7 @@
     um einiges mehr ist. Dies lässt sich aber erklären, wenn man sich das Datenset genauer anschaut.
     <br>
     Im Datenset sind hauptsächlich Ausfälle des "Regionalen Personenverkehrs" (RPV), jedoch hat es in einigen Regionen auch Linien
-    des Ortsverkehr (OV). In Zürich jedoch z.B. hat es nur Linien des RPV und somit in der Stadt selbst kaum aufgezeichnete Ausfälle.
+    des "Ortsverkehrs" (OV). In Zürich jedoch z.B. hat es nur Linien des RPV und somit in der Stadt selbst kaum aufgezeichnete Ausfälle.
     Ein anderer Grund für die Menge an Ausfällen in Lausanne ist die Tatsache das es in Lausanne sehr viele Ausfälle des Typ 2 gibt
     "Keine Echtzeitdaten für ganze Fahrt". Dies heisst, dass wir nicht wissen ob diese Fahrten wirklich ausgefallen sind oder sie einfach nicht richtig
     übertragen worden sind. Indem man Typ 2 bei dem Filter ausschaltet erhält man ein etwas "korrekteres" Bild der ganzen Situation.
