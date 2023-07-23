@@ -4,7 +4,7 @@
     import Map from "../components/map/Map.svelte";
 </script>
 
-<nav class="flex items-center flex-col pt-10">
+<nav class="flex items-center flex-col pt-10 text-center mt-14">
     <h1 class="text-7xl font-black">Open Data Project</h1>
     <h1 class="mt-6 mb-12 text-4xl font-bold">Ausfälle im Öffentlichen Verkehr</h1>
 </nav>
@@ -12,11 +12,11 @@
     Die meisten kennen diese Situation, man ist im Zug und muss bald umsteigen jedoch fällt einem beim Blick
     auf die App auf das der Anschluss ausgefallen ist. Verzweifelt sucht man nach einem Ersatz, jedoch ohne Glück.
     Bitter akzeptiert man seine Niederlage und wartet auf den nächsten Zug.
-    Manchmal wird die Situation jedoch nur absurder und der ausgefallene Zug taucht plötzlich doch auf... lediglich mit däftiger Verspätung.
+    Manchmal wird die Situation jedoch nur absurder und der ausgefallene Zug taucht plötzlich doch auf... lediglich mit deftiger Verspätung.
     <br>
     Ich habe mich immer gefragt was die Ursachen für diese Verspätungen und Ausfälle sind und wie oft diese
     denn eigentlich vorkommen. Hängen sie mit dem Wetter oder der Jahreszeit zusammen? Ausserdem ist die Frage wie viele der
-    offziellen "Ausfälle" denn wirklich Ausfälle sind und nicht nur grosse Verspätungen oder Misskommunikation.
+    offiziellen "Ausfälle" denn wirklich Ausfälle sind und nicht nur grosse Verspätungen oder Misskommunikation.
     Ich werde probieren einige meiner Fragen mit dem Datenset welches ich habe zu beantworten und meine Erkenntnisse zu visualisieren.
 </p>
 <h2 class="text-4xl font-black my-8">Heatmap</h2>
@@ -36,8 +36,8 @@
     um einiges mehr ist. Dies lässt sich aber erklären, wenn man sich das Datenset genauer anschaut.
     <br>
     Im Datenset sind hauptsächlich Ausfälle des "Regionalen Personenverkehrs" (RPV), jedoch hat es in einigen Regionen auch Linien
-    des Ortsverkehrt (OV). In Zürich jedoch z.B. hat es nur Linien des RPV und somit in der Stadt selbst kaum aufgezeichnete Ausfälle.
-    Ein anderer Grund für die Masse der Ausfälle in Lausanne ist die Tatsache das es in Lausanne sehr viele Ausfälle des Typ 2 gibt
+    des Ortsverkehr (OV). In Zürich jedoch z.B. hat es nur Linien des RPV und somit in der Stadt selbst kaum aufgezeichnete Ausfälle.
+    Ein anderer Grund für die Menge an Ausfällen in Lausanne ist die Tatsache das es in Lausanne sehr viele Ausfälle des Typ 2 gibt
     "Keine Echtzeitdaten für ganze Fahrt". Dies heisst, dass wir nicht wissen ob diese Fahrten wirklich ausgefallen sind oder sie einfach nicht richtig
     übertragen worden sind. Indem man Typ 2 bei dem Filter ausschaltet erhält man ein etwas "korrekteres" Bild der ganzen Situation.
 </p>
@@ -55,18 +55,18 @@
     als ein Typ 2 Ausfall klassifiziert, die dazugehörigen Fahrten haben zum grössten Teil jedoch wahrscheinlich stattgefunden.
     Wie auch bei der Heatmap kann man hier den Typ 2 bei den Filtern ausschalten um ein korrekteres Bild zu bekommen.
 </p>
-<h2 class="text-4xl font-black my-8">Seasonale Ausfälle</h2>
+<h2 class="text-4xl font-black my-8">Saisonale Ausfälle</h2>
 <p class="text-body">
     Eine Statistik die mich persönlich brennend interessiert hat ist ob die Ausfälle etwas mit den Jahreszeiten zu tun haben.
     Für mich persönlich wäre es zum Beispiel logisch, dass es im Winter mehr Ausfälle hat wegen Schnee und schlechtem Wetter
-    und im Sommer könnte man wegen der Hitze villeicht einen ähnlichen Effekt sehen, schauen wir uns mal an was der Graph sagt!
+    und im Sommer könnte man wegen der Hitze vielleicht einen ähnlichen Effekt sehen, schauen wir uns mal an was der Graph sagt!
 </p>
 <SeasonalBarChart />
 <p class="text-body">
     Ich lag scheinbar komplett daneben? Das es im Herbst die meisten Ausfälle hat, hat wahrscheinlich mit dem Spike vom 7. und 8. November zu tun
     jedoch erklärt das nicht warum der Winter so wenige Ausfälle hat? Könnte es sein das ich die Robustheit unseres Öffentlichen Verkehrs unterschätzt habe?
     Die plausiblere Erklärung meinerseits wäre jedoch, dass der Hauptgrund für Ausfälle Baustellen sein könnten und es im Winter einfach weniger Baustellen hat.
-    Dies ist hierbei nach wie vor reine Spekulation meinserseits.
+    Dies ist hierbei nach wie vor reine Spekulation meinerseits.
 </p>
 <h2 class="text-4xl font-black my-8">Fazit</h2>
 <p class="text-body">
@@ -77,7 +77,7 @@
     In der Zukunft würde ich diese Daten gerne noch auf andere Arten visualisieren und sie noch mit Verspätungsdaten verbinden um zu sehen wie diese
     Statistiken zusammenhängen.
 </p>
-<footer class="h-44 w-full mt-20 bg-base-200 tracking-wide flex justify-between pt-8 px-40">
+<footer class="footer p-10 mt-20 bg-base-200">
     <div>
         <h3 class="font-bold text-lg">Open Data Project</h3>
         <a class="link" href="https://github.com/arseeeeN/open_data_project">Source</a>

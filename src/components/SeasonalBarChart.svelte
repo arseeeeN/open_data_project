@@ -86,9 +86,9 @@
     });
 </script>
 
-<div class="card w-[85vw] h-[38rem] my-14 card-side bg-base-100 drop-shadow-xl items-center">
-    <div class="w-[1200px] h-[500px] my-16 ml-16" bind:this={element}></div>
-    <div class="card-body h-full">
+<div class="card lg:card-side lg:w-[75vw] my-14 bg-base-100 lg:drop-shadow-xl items-center">
+    <div class="w-full lg:flex lg:items-center aspect-[12/5] lg:my-16 lg:ml-16 px-2 lg:p-0" bind:this={element}></div>
+    <div class="card-body">
         <h2 class="card-title">Einstellungen</h2>
         <AusfallTypeFilter bind:filter={filter} onChange={handleUpdateEvent} />
         <div class="flex gap-10">

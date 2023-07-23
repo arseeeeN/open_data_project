@@ -74,28 +74,28 @@
     });
 </script>
 
-<div class="card w-[85vw] h-[38rem] my-14 card-side bg-base-100 drop-shadow-xl items-center">
-    <div id="heatmap"></div>
-    <div class="card-body h-full">
+<div class="card lg:card-side lg:w-[75vw] my-14 bg-base-100 lg:drop-shadow-xl items-center">
+    <div class="h-[30rem] lg:h-auto w-full lg:flex lg:items-center m-0 lg:rounded-l" id="heatmap"></div>
+    <div class="card-body max-w-fit min-w-3/5">
         <h2 class="card-title">Einstellungen</h2>
-        <div class="flex gap-10">
-            <div class="w-1/2">
+        <div class="flex flex-col lg:flex-row lg:gap-10">
+            <div class="pr-4 lg:p-0">
                 {#await dateSpanFetch}
                     <div class="loading"></div>
                 {:then timeSpan}
                     <h2 class="font-bold mt-6">Zeitspanne:</h2>
-                    <div class="form-control w-full max-w-xs mt-2">
+                    <div class="form-control mt-2">
                         <label for="from-time" class="text-sm pl-2 pb-1">From</label>
                         <input type="datetime-local" id="from-time"
-                            class="input input-bordered rounded-lg w-full max-w-xs"
+                            class="input input-bordered rounded-lg min-w-full"
                             name="from-time" bind:value={from}
                             on:change={handleUpdateEvent}
                             min={timeSpan.from} max={timeSpan.to}>
                     </div>
-                    <div class="form-control w-full max-w-xs mt-2">
+                    <div class="form-control mt-2">
                         <label for="to-time" class="text-sm pl-2 pb-1">To</label>
                         <input type="datetime-local" id="to-time"
-                            class="input input-bordered rounded-lg w-full max-w-xs"
+                            class="input input-bordered rounded-lg min-w-full"
                             name="to-time" bind:value={to}
                             on:change={handleUpdateEvent}
                             min={timeSpan.from} max={timeSpan.to}>
@@ -116,19 +116,9 @@
                     />
                 </div>
             </div>
-            <div class="w-2/5">
+            <div class="lg:w-56">
                 <AusfallTypeFilter bind:filter={filter} onChange={handleUpdateEvent} />
             </div>
         </div>
     </div>
 </div>
-
-<style>
-    #heatmap {
-        height: 38rem;
-        width: 50vw;
-        margin: 0;
-        border-top-left-radius: var(--rounded-box, 1rem);
-        border-bottom-left-radius: var(--rounded-box, 1rem);
-    }
-</style>

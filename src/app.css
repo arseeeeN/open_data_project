@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Noto Sans Symbols 2", sans-serif;
 }
 
 .text-body {
-  @apply w-[60vw] leading-[34px] text-xl
+  @apply w-[80vw] lg:w-[60vw] leading-8 lg:leading-[34px] text-xl
 }
