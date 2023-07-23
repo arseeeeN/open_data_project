@@ -12,7 +12,7 @@
     Die meisten von uns kennen diese Situation: Man sitzt im Zug und muss bald umsteigen,
     aber beim Blick auf die App stellt man fest, dass der Anschlusszug ausgefallen ist.
     Verzweifelt sucht man nach Alternativen, doch leider ohne Erfolg. Frustriert akzeptiert
-    man schliesslich die Niederlage und wartet auf den nächsten Zug
+    man schliesslich die Niederlage und wartet auf den nächsten Zug.
     <br>
     Manchmal wird diese Situation noch absurder, wenn der ausgefallene Zug plötzlich mit erheblicher Verspätung auftaucht.
     Man fragt sich dann, was wohl die Ursachen für diese Verspätungen und Ausfälle sind
